@@ -6,7 +6,7 @@ const NavigationBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
         <h1 className="navbar-brand nav-item display-6">
-          cryptography and Networking
+          Cryptography and Networking
         </h1>
         <button
           className="navbar-toggler"
