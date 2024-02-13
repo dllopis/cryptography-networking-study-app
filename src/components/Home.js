@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="mt-5">
-      <h1 className="text-center pt-5"> Welcome to Cryptology and Networking! </h1>
+      <h1 className="text-center pt-5"> Welcome to Cryptography and Networking! </h1>
       <p className="text-center">
         I hope that you can enjoy and utilize this site as a resource to help aid
         your studies. I will be updating this site as I'm learning the material throughout

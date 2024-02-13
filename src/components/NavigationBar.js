@@ -6,7 +6,7 @@ const NavigationBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
         <h1 className="navbar-brand nav-item display-6">
-          Cryptology and Networking
+          cryptography and Networking
         </h1>
         <button
           className="navbar-toggler"
@@ -22,7 +22,7 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/cryptography-networking-study-app/">
                 Home
               </Link>
             </li>
