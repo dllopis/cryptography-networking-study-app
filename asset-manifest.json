@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cryptology-networking-study-app/static/css/main.d54348b2.css",
-    "main.js": "/cryptology-networking-study-app/static/js/main.8bb61d59.js",
+    "main.js": "/cryptology-networking-study-app/static/js/main.c27c87f7.js",
     "static/js/592.af952b01.chunk.js": "/cryptology-networking-study-app/static/js/592.af952b01.chunk.js",
     "index.html": "/cryptology-networking-study-app/index.html",
     "main.d54348b2.css.map": "/cryptology-networking-study-app/static/css/main.d54348b2.css.map",
-    "main.8bb61d59.js.map": "/cryptology-networking-study-app/static/js/main.8bb61d59.js.map",
+    "main.c27c87f7.js.map": "/cryptology-networking-study-app/static/js/main.c27c87f7.js.map",
     "592.af952b01.chunk.js.map": "/cryptology-networking-study-app/static/js/592.af952b01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d54348b2.css",
-    "static/js/main.8bb61d59.js"
+    "static/js/main.c27c87f7.js"
   ]
 }
