@@ -5,7 +5,7 @@ const KeyTermsComponent = (props) => {
   const [keyTerms, setKeyTerms] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/data/key-terms-chapter-${props.chapter}.json`)
+    fetch(`https://github.com/dllopis/cryptology-networking-study-app/blob/main/public/data/key-terms-chapter-1.json`)
       .then((response) => response.json())
       .then((data) => setKeyTerms(Object.entries(data)));
   }, [props.chapter]);
