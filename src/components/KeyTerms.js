@@ -12,7 +12,7 @@ const KeyTermsComponent = (props) => {
 
   return (
     <div className="container-fluid d-flex flex-column mt-5">
-      <h1 className="mt-4 mb-4 text-center">Key Terms: Chapter {props.chapter}</h1>
+      <h1 className="display-6 mt-4 mb-4">Key Terms: Chapter {props.chapter}</h1>
       <div className="row g-4 justify-content-center">
         {keyTerms.map(([term, definition]) => (
           <div key={term} className="col-12 col-md-6 col-lg-4">

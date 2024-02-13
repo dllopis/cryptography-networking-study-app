@@ -13,6 +13,7 @@ const App = () => {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cryptology-networking-study-app/" element={<Home />} />
         <Route path="/Chapter/1/flashcards" element={<KeyTermsCarousel chapter="1" />} />
         <Route path="/Chapter/1" element={<KeyTerms chapter="1" />} />
       </Routes>
