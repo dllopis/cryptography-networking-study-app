@@ -5,7 +5,7 @@ const KeyTermsComponent = (props) => {
   const [keyTerms, setKeyTerms] = useState([]);
 
   useEffect(() => {
-    fetch(`/data/key-terms-chapter-${props.chapter}.json`)
+    fetch(`${process.env.PUBLIC_URL}/data/key-terms-chapter-${props.chapter}.json`)
       .then((response) => response.json())
       .then((data) => setKeyTerms(Object.entries(data)));
   }, [props.chapter]);
