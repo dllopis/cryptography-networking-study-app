@@ -10,9 +10,9 @@ const MultipleChoiceQuiz = ({ data }) => {
 
   const currentQuestion = data[questionIndex];
 
-  const handleCheckAnswer = () => {
-    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+  const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
+  const handleCheckAnswer = () => {
     setQuizAnswers((prevAnswers) => ({
       ...prevAnswers,
       [currentQuestion.term]: { selectedAnswer, isCorrect },
@@ -50,19 +50,18 @@ const MultipleChoiceQuiz = ({ data }) => {
   }, [quizSubmitted, score, quizAnswers]);
 
   return (
-    <div>
-      <h1>Multiple Choice Quiz</h1>
+    <div className="container vh-100 d-flex justify-content-start align-items-between flex-column mt-5">
       {quizSubmitted ? (
-        <div>
+        <div className="mt-5">
           <h2>Quiz Submitted! Your Score: {score}</h2>
           {/* You can display additional feedback or actions after the quiz is submitted */}
         </div>
       ) : (
-        <div>
+        <div className="mt-5">
           <h2>Question {questionIndex + 1}</h2>
           <p>{currentQuestion.term}</p>
           <form>
-            <ul>
+            <ul className="list-unstyled">
               {currentQuestion.options.map((option, index) => (
                 <li key={index}>
                   <label>
@@ -73,7 +72,7 @@ const MultipleChoiceQuiz = ({ data }) => {
                       checked={selectedAnswer === option}
                       onChange={() => !checkAnswerPressed && setSelectedAnswer(option)}
                       disabled={checkAnswerPressed}
-                    />
+                    />{' '}
                     {option}
                   </label>
                 </li>
@@ -83,6 +82,17 @@ const MultipleChoiceQuiz = ({ data }) => {
           <button onClick={handleCheckAnswer} disabled={!selectedAnswer || checkAnswerPressed}>
             Check Answer
           </button>
+          {checkAnswerPressed && (
+            <div>
+              {isCorrect ? (
+                <p>Correct!</p>
+              ) : (
+                <p>
+                  Incorrect. The correct answer is: {currentQuestion.correctAnswer}.
+                </p>
+              )}
+            </div>
+          )}
           <button onClick={handlePreviousQuestion} disabled={questionIndex === 0}>
             Previous Question
           </button>
