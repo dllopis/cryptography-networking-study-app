@@ -22,7 +22,10 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/cryptography-networking-study-app/">
+              <Link
+                className="nav-link"
+                to="/cryptography-networking-study-app/"
+              >
                 Home
               </Link>
             </li>
@@ -47,7 +50,7 @@ const NavigationBar = () => {
                 </Link>
               </div>
             </li>
-            
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -70,6 +73,27 @@ const NavigationBar = () => {
               </div>
             </li>
 
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Multiple Choice Quiz
+              </a>
+              <div
+                className="dropdown-menu mt-2"
+                aria-labelledby="navbarDropdown"
+              >
+                <Link className="dropdown-item" to="/chapter/1/MultipleChoiceQuiz">
+                  Chapter 1
+                </Link>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
