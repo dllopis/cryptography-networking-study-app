@@ -10,7 +10,7 @@ import PrepareQuiz from "./components/PrepareQuiz";
 
 const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
