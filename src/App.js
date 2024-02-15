@@ -11,7 +11,6 @@ import PrepareQuiz from "./components/PrepareQuiz";
 const App = () => {
   return (
     <Router>
-      <Switch>
       <NavigationBar />
       <Routes>
       <Route path="/" element={<Home />} />
@@ -19,7 +18,6 @@ const App = () => {
       <Route path="/chapter/:chapter" element={<KeyTerms chapter="1"/>} />
       <Route path="/chapter/:chapter/multiplechoicequiz" element={<PrepareQuiz chapter="1"/>} />
       </Routes>
-      </Switch>
     </Router>
   );
 };
