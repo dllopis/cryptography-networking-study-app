@@ -10,14 +10,14 @@ import PrepareQuiz from "./components/PrepareQuiz";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cryptography-networking-study-app/" element={<Home />} />
-        <Route path="cryptography-networking-study-app/Chapter/1/flashcards" element={<KeyTermsCarousel chapter="1" />} />
-        <Route path="cryptography-networking-study-app/Chapter/1" element={<KeyTerms chapter="1" />} />
-        <Route path="cryptography-networking-study-app/Chapter/1/multiplechoicequiz" element={<PrepareQuiz chapter="1" />} />
+        <Route path="/cryptography-networking-study-app/Chapter/1/flashcards" element={<KeyTermsCarousel chapter="1" />} />
+        <Route path="/cryptography-networking-study-app/Chapter/1" element={<KeyTerms chapter="1" />} />
+        <Route path="/cryptography-networking-study-app/Chapter/1/multiplechoicequiz" element={<PrepareQuiz chapter="1" />} />
       </Routes>
     </Router>
   );
