@@ -24,7 +24,7 @@ const NavigationBar = () => {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                to="/"
+                to="/cryptography-networking-study-app/"
               >
                 Home
               </Link>
@@ -45,7 +45,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/chapter/1">
+                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1">
                   Chapter 1
                 </Link>
               </div>
@@ -67,7 +67,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/chapter/1/flashcards">
+                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1/flashcards">
                   Chapter 1
                 </Link>
               </div>
@@ -89,7 +89,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/chapter/1/multiplechoicequiz">
+                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1/multiplechoicequiz">
                   Chapter 1
                 </Link>
               </div>

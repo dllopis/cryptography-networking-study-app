@@ -14,12 +14,12 @@ const App = () => {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Chapter/1/flashcards" element={<KeyTermsCarousel chapter="1" />} />
-        <Route path="/Chapter/1" element={<KeyTerms chapter="1" />} />
-        <Route path="/Chapter/1/multiplechoicequiz" element={<PrepareQuiz chapter="1" />} />
+        <Route path="cryptography-networking-study-app/chapter/1/flashcards" element={<KeyTermsCarousel chapter="1" />} />
+        <Route path="cryptography-networking-study-app/chapter/1" element={<KeyTerms chapter="1" />} />
+        <Route path="cryptography-networking-study-app/chapter/1/multiplechoicequiz" element={<PrepareQuiz chapter="1" />} />
       </Routes>
     </Router>
   );
-}; 
+};
 
 export default App;
