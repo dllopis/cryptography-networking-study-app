@@ -22,12 +22,7 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/cryptography-networking-study-app/"
-              >
-                Home
-              </Link>
+            <Link className="nav-link" to="/#/">Home</Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -45,9 +40,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1">
-                  Chapter 1
-                </Link>
+                <Link className="dropdown-item" to="/chapter/1">Chapter 1</Link>
               </div>
             </li>
 
@@ -67,9 +60,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1/flashcards">
-                  Chapter 1
-                </Link>
+                <Link className="dropdown-item" to="/chapter/1/flashcards">Chapter 1</Link>
               </div>
             </li>
 
@@ -89,9 +80,7 @@ const NavigationBar = () => {
                 className="dropdown-menu mt-2"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="/cryptography-networking-study-app/chapter/1/multiplechoicequiz">
-                  Chapter 1
-                </Link>
+                <Link className="dropdown-item" to="/chapter/1/multiplechoicequiz">Chapter 1</Link>
               </div>
             </li>
           </ul>
