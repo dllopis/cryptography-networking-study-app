@@ -1,0 +1,20 @@
+{
+    "Access Control": "Mechanisms that enforce access rights to resources.",
+    "Active Attack": "An attack that attempts to alter system resources or affect their operation.",
+    "Asymmetric Encryption Algorithms": "Encryption algorithms that use two related keys: a public key and a private key.",
+    "Attack": "Any action that compromises the security of information.",
+    "Authentication": "A process used to verify the identity of a user, process, or system.",
+    "Authentication Exchange": "A mechanism to ensure the identity of an entity through information exchange.",
+    "Authenticity": "The property that ensures the entity is who it claims to be.",
+    "Availability": "Ensures that systems work promptly and service is not denied to authorized users.",
+    "Block Cipher": "A symmetric encryption algorithm that operates on fixed-size blocks of data.",
+    "Confidentiality": "Preserving authorized restrictions on information access and disclosure.",
+    "Cryptographic Hash Function": "A function that turns variable text into a fixed-length value, useful in cryptographic algorithms.",
+    "Cryptography": "A branch of mathematics dealing with the transformation of data for secure storage and transmission.",
+    "Cybersecurity": "The practice of protecting systems, networks, and programs from digital attacks and unauthorized access.",
+    "Data Authenticity": "Ensures the integrity and origin of data through verification.",
+    "Data Confidentiality": "Ensures that data is not disclosed to unauthorized parties.",
+    "Data Integrity": "Ensures that data remains accurate, consistent, and unaltered during processing and storage.",
+    "Data Origin Authentication": "Ensures that the claimed source of information is authentic.",
+    "Denial of Service": "An attack that makes a system or network unavailable to users."
+}
