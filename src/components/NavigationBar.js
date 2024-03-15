@@ -41,6 +41,7 @@ const NavigationBar = () => {
                 aria-labelledby="navbarDropdown"
               >
                 <Link className="dropdown-item" to="/chapter/1">Chapter 1</Link>
+                <Link className="dropdown-item" to="/chapter/2">Chapter 2</Link>
               </div>
             </li>
 
@@ -61,6 +62,7 @@ const NavigationBar = () => {
                 aria-labelledby="navbarDropdown"
               >
                 <Link className="dropdown-item" to="/chapter/1/flashcards">Chapter 1</Link>
+                <Link className="dropdown-item" to="/chapter/2/flashcards">Chapter 2</Link>
               </div>
             </li>
 
@@ -81,6 +83,25 @@ const NavigationBar = () => {
                 aria-labelledby="navbarDropdown"
               >
                 <Link className="dropdown-item" to="/chapter/1/multiplechoicequiz">Chapter 1</Link>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Ciphers
+              </a>
+              <div
+                className="dropdown-menu mt-2"
+                aria-labelledby="navbarDropdown"
+              >
+                <Link className="dropdown-item" to="/ciphers/ceaser-cipher/">Ceaser Cipher</Link>
               </div>
             </li>
           </ul>

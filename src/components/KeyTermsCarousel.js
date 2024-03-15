@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
 import KeyTermCard from "./KeyTermCard";
+import { useParams } from 'react-router-dom';
 
 const KeyTermsCarousel = (props) => {
   const [keyTerms, setKeyTerms] = useState([]);
-
+  const { chapter } = useParams();
+  
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/data/key-terms-chapter-${props.chapter}.json`)
+    // Clear keyTerms state when switching chapters
+    setKeyTerms([]);
+    
+    fetch(`${process.env.PUBLIC_URL}/data/key-terms-chapter-${chapter}.json`)
     .then((response) => response.json())
       .then((data) => setKeyTerms(Object.entries(data)));
-  }, [props.chapter]);
+  }, [chapter]);
 
   return (
     <div className="container-fluid h-100 p-0">
